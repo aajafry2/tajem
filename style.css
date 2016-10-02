@@ -1,0 +1,641 @@
+/***
+#######################
+  ### DEFULT STYLE ###
+#######################
+***/
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+
+/***
+#######################
+ ### COMMON STYLE ###
+#######################
+***/
+
+.container {
+    width: 960px;
+}
+
+.bordered-btn {
+    border: 1px solid;
+    color: #00e0d0;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.header-area::after,
+.single-slide-item::after,
+.our-story-area::after,
+.team-section::after,
+.portfolio-img-hover::after,
+.testimonial-area::after,
+.footer-area::after {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#09052f+0,311d5e+100 */
+    background: #09052f;
+    /* Old browsers */
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #09052f 0%, #311d5e 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #09052f 0%, #311d5e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#09052f', endColorstr='#311d5e', GradientType=0);
+    /* IE6-9 */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.85;
+    height: 100%;
+    width: 100%;
+}
+
+
+/***
+#######################
+### HERO AREA STYLE ###
+#######################
+***/
+
+.welcome-hero-area {
+    margin-top: 5px;
+}
+
+
+/***
+#######################
+ ### NAV-BAR STYLE ###
+#######################
+***/
+
+.header-area {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 3 !important;
+    border-bottom: 1px solid #00e0d0;
+    padding: 4px 0;
+}
+
+.mainmenu {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.mainmenu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.mainmenu li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainmenu li a {
+    color: #fff;
+    display: block;
+    padding: 15px 20px;
+}
+
+.mainmenu li a:hover {
+    background-color: slategrey;
+    border-radius: 10px;
+    color: #00e0d0;
+}
+
+
+.welcome-hero-area div.sticky-wrapper {
+    height: 0 !important;
+}
+
+.welcome-hero-area .header-area .container {
+    width: 1170px;
+}
+
+
+/***
+########################
+### SLIDE AREA STYLE ###
+########################
+***/
+
+.welcome-hero-area,
+.welcome-slider-area,
+.welcome-slider-area div {
+    height: 100%;
+}
+
+.welcome-hero-area div.slide-item-tablecell,
+.welcome-hero-area div.slide-item-tablecell div {
+    height: auto;
+}
+
+.slide-item-table {
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.slide-item-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.single-slide-item {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.slide-1 {
+    background-image: url(img/banner4.jpg);
+}
+
+.slide-2 {
+    background-image: url(img/banner2.jpg);
+}
+
+.slide-3 {
+    background-image: url(img/banner3.jpg);
+}
+
+.single-slide-item h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.single-slide-item h2::after {
+    background: #00e0d0 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+
+
+/***
+##################
+###CAROSOL FADE###
+##################
+***/
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+
+/***
+########################
+### ABOUT AREA STYLE ###
+########################
+***/
+
+.content-section {
+    padding: 50px 0px;
+}
+
+
+/***
+########################
+### VIDEO AREA STYLE ###
+########################
+***/
+
+.our-story-area {
+    background: url(img/video-placeholder.jpg) no-repeat scroll center center / cover;
+    position: relative;
+    z-index: 2;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 200px 0;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.our-story-area::after {
+    z-index: 2;
+}
+
+.our-story-area .container {
+    position: relative;
+    z-index: 3;
+}
+
+.our-story-area a {
+    color: #fff;
+}
+
+.video-play-icon-wrapper {
+    border: 2px solid;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 40px;
+    height: 100px;
+    line-height: 95px;
+    margin-bottom: 15px;
+    width: 100px;
+}
+
+.ytplayer-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-top: -10px;
+}
+
+
+/***
+###########################
+### SERVICES AREA STYLE ###
+###########################
+***/
+
+.section-header {
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.section-header h2 {
+    font-size: 22px;
+}
+
+.section-header::after {
+    background: #333 none repeat scroll 1px center;
+    content: "";
+    height: 1px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+
+.single-featured-item.text-center > h2 {
+    font-size: 15px;
+}
+
+.single-featured-item.text-center > img {
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.single-featured-item.text-center {
+    margin-bottom: 65px;
+}
+
+
+/***
+###########################
+  ### TEAM AREA STYLE ###
+###########################
+***/
+
+.team-section {
+    background: url(img/team-bg.jpg) no-repeat fixed center center / cover;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 70px 0px;
+}
+
+.single-employee-section.text-center {
+    border: 1px solid #00e0d0;
+    margin-bottom: 70px;
+}
+
+.section-header::after {
+    background: #00e0d0 none repeat scroll 0 0;
+}
+
+.single-employee-section.text-center > img {
+    margin-bottom: 20px;
+}
+
+.single-employee-section.text-center > h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.single-employee-section.text-center > p {
+    padding-bottom: 25px;
+}
+
+.hiring-massage > p {
+    margin-bottom: 30px;
+}
+
+
+/***
+############################
+### PORTFOLIO AREA STYLE ###
+############################
+***/
+
+.portfolio-section div.col-md-2 h2 {
+    font-size: 20px;
+}
+
+.portfolio-section div.col-md-3.col-md-offset-7 > a {
+    font-size: 14px;
+}
+
+.portfolio-section div.col-md-3.col-md-offset-7 > i {
+    margin-left: 5px;
+}
+
+.all-portfolio-item {
+    display: table;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.single-portfolio-item {
+    display: inline-table;
+    float: left;
+    height: 100%;
+    width: 16.666%;
+    position: relative;
+}
+
+.portfolio-img-hover {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+    width: 100%;
+    z-index: 0;
+}
+
+.single-portfolio-item:hover div.portfolio-img-hover {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: all 1s linear 0s;
+    transition: all 1s linear 0s;
+}
+
+.img-details-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.img-details {
+    margin-left: -5px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img-details > a {
+    border: 1px solid;
+    border-radius: 5px;
+    color: #00e0d0;
+    display: inline-table;
+    height: 45px;
+    margin-left: 5px;
+    width: 45px;
+}
+
+.img-details a i {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/***
+##############################
+### TESTIMONIAL AREA STYLE ###
+##############################
+***/
+
+.testimonial-area {
+    background: url(img/testimonial-bg.jpg) no-repeat fixed center center / cover;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 50px 0px;
+}
+
+.testimonial-list-wrapper {
+    padding-top: 60px;
+}
+
+.testimonial-list-wrapper::before {
+    background: rgba(0, 0, 0, 0) url("img/testimonial-icon.png") repeat scroll 0 0;
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    height: 26px;
+    width: 32px;
+    margin-left: -16px;
+}
+
+.testimonial-author {
+    font-weight: 700;
+    margin: 50px 0;
+}
+
+.testimonial-author span {
+    display: block;
+    font-weight: 400;
+    opacity: .8;
+}
+
+.testimonial-list-wrapper .lSSlideOuter .lSPager.lSGallery img {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 17.5px;
+}
+
+.testimonial-list-wrapper .lSSlideOuter .lSPager.lSGallery li.active img {
+    width: 120px;
+    margin-top: 0px;
+}
+
+
+/***
+##############################
+ ### CONTRACTS AREA STYLE ###
+##############################
+***/
+
+.contracts-area h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contracts-area h2,
+p {
+    margin-bottom: 30px;
+}
+
+.contracts-area p {
+    margin-left: 50px;
+}
+
+.contracts-area img {
+  margin:  15px auto;
+  max-width: 50px !important;
+}
+.form-wrapper p {
+    margin: 0;
+}
+input,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+.form-wrapper span {
+  color: #990000;
+  display: block;
+  margin: 10px auto;
+}
+
+.contracts-area .bordered-btn {
+    display: inline-block;
+    width: auto;
+}
+
+
+/***
+##############################
+ ### FOOTER AREA STYLE ###
+##############################
+***/
+
+.footer-area {
+    background: url(img/footer-bgr.jpg) no-repeat scroll center center / cover;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding-top: 20px;
+}
+
+footer.content-section {
+    padding-bottom: 0px;
+}
+
+.social-icon > ul {
+    list-style: outside none none;
+}
+.social-icon li {
+    display: inline-block;
+    padding: 0 4px;
+}
+.social-icon a {
+    color: #eee;
+    display: block;
+    font-size: 20px;
+}
+.social-icon {
+    text-align: right;
+}

@@ -13,8 +13,8 @@ include("validation.php");
     <title>TAJEM</title>
     <link rel="icon" href="img/logo.png">
     <!--ALL CSS FILE-->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
@@ -481,6 +481,7 @@ include("validation.php");
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/jquery.youtubebackground.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/lightslider.min.js"></script>
@@ -498,7 +499,7 @@ include("validation.php");
         });
     </script>
     
-    <script src="js/main.js"></script>
+    
 
 </body>
 

@@ -1,5 +1,15 @@
 (function ($) {
 	"use strict";
+	
+	//sticky
+        $(".header-area").sticky({topSpacing:0});
+        //smoothScroll
+
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'Linear',
+            offset: 0
+        });
 
     jQuery(document).ready(function($){
 
@@ -27,15 +37,7 @@
             thumbItem:5
         });
             
-        //sticky
-        $(".header-area").sticky({topSpacing:0});
-        //smoothScroll
 
-        smoothScroll.init({
-            speed: 1000,
-            easing: 'Linear',
-            offset: 0
-        });
         
        
         
